@@ -12,13 +12,13 @@ const produtos = [
   {
     name: "Kit Festa Completo",
     tag: "Kit Festa",
-    img: "/images/confeiteira-2.jpg",
+    img: "/images/logolilisemfundo.png",
     price: "A partir de R$ 280",
   },
   {
     name: "Mesa de Evento",
     tag: "Eventos",
-    img: "/images/confeiteira-3.jpg",
+    img: "/images/logolilisemfundo.png",
     price: "Sob consulta",
   },
 ];
