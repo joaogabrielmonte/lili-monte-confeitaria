@@ -1,0 +1,75 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  --ink:       #1C1009;
+  --parchment: #F7F2E8;
+  --gossamer:  #EAE0D0;
+  --stone:     #8E7E72;
+  --copper:    #B5724A;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Jost', system-ui, sans-serif;
+  font-weight: 300;
+  background-color: var(--parchment);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(181, 114, 74, 0.2);
+  color: var(--ink);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 70vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Secondary pages */
+.page {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 7rem 1.5rem;
+}
+
+.page h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1;
+}
+
+.page p {
+  max-width: 42rem;
+  margin-top: 1rem;
+  color: var(--stone);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 5.5rem 1.25rem;
+  }
+}
